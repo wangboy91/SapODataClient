@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapODataClient", "SapODataClient\SapODataClient.csproj", "{10DE8E96-7A9E-47C0-BF2C-AF737B49AFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SapODataClientTest", "SapODataClientTest\SapODataClientTest.csproj", "{09214574-D51B-49F6-86DF-F63A6B72F10B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10DE8E96-7A9E-47C0-BF2C-AF737B49AFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DE8E96-7A9E-47C0-BF2C-AF737B49AFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DE8E96-7A9E-47C0-BF2C-AF737B49AFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DE8E96-7A9E-47C0-BF2C-AF737B49AFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09214574-D51B-49F6-86DF-F63A6B72F10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09214574-D51B-49F6-86DF-F63A6B72F10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09214574-D51B-49F6-86DF-F63A6B72F10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09214574-D51B-49F6-86DF-F63A6B72F10B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
