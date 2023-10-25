@@ -1,6 +1,18 @@
 # SapODataClient
 针对SAP的OData接口进行简单请求封装
 
+````C#
+    _sapHttpClient = new SapHttpClient(userName, pwd);
+    
+    var sapFilterBuilder = new SapFilterBuilder()
+        .In("externalCode", new[] { "70000068", "70000068" });
+    var requestParams = new SapParamsBuilder();
+    requestParams.Filter(sapFilterBuilder);
+    
+    var list = await _sapHttpClient.GetDataByParams<SapResultListResponse<JObject>>("FOCompany",requestParams);
+````
+
+
 #### SuccessFactors
 SuccessFactors（后文简称 SF，网上和股票市场称 SFSF） 于 2001 年成立，致力于提供基于云的人力资源管理的 SaaS 服务，于 2007 年上市，2011年被 SAP 收购，现在成为了 SAP 旗下人力资源管理的产品。SF 也有很多产品，招聘、Onboarding、CoreHR、学习等等。
 
