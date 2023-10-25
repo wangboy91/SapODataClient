@@ -33,5 +33,23 @@ namespace SapODataClientTest
                 Assert.True(false);
             }
         }
+        [Fact]
+            public async Task GetFOCompanyTest2()
+            {
+                try
+                {
+                    var sapFilterBuilder = new SapFilterBuilder()
+                        .In("externalCode", new[] { "70000068", "70000068" });
+                    
+                    var list = await _sapHttpClient.GetDataAsOfDateByFilter<SapResultListResponse<JObject>>("FOCompany",sapFilterBuilder);
+                    Console.WriteLine($"获取到数据条数{list.Data.Results}");
+                    Assert.True(list.Data.Results.Count>0);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    Assert.True(false);
+                }
+            }
     }
 }
